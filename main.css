@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+/* :root {
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:#1ebed6;
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+    
+} */
+
+.dark-theme {
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:#1ebed6;
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+}
+
+.light-theme {
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:#333333;
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:#dadada;
+    --mainBgColor-light:#f9fafb;
+
+    --mainTextColor:var(--mainTextColor-light);
+    --secondaryTextColor:var(--secondaryTextColor-light);
+    --mainLinkColor:var(--mainLinkColor-light);
+    --mainBorderColor:var(--mainBorderColor-light);
+    --mainBgColor:var(--mainBgColor-light);
+}
+
+*{
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+    
+}
+
+body {
+    background-color: var(--mainBgColor);  
+    max-width: 800px;          
+    margin: 0 auto;
+    padding: 1em;
+}
+
+section { 
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#theme-btn {
+    display: block;
+    margin: auto;
+    color: var(--mainTextColor);
+    background-color: var(--mainBgColor);
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#cv-btn {
+    display: block;
+    margin: auto;
+    color: var(--mainTextColor);
+    background-color: var(--mainBgColor);
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    justify-content: space-between;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+    list-style: none;
+    font-weight: 100;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+}
+
+p, strong, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+    line-height: 1,9em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.recent {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.ancien {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.realisations {
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+    justify-content: space-between;
+}
+
+.master {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.licence {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.cours-master {
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+    justify-content: space-between;
+}
+.cours {
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+    justify-content: space-between;
+}
+
+.Bac {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    float: left;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.langue {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    float: left;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+.qualites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    float: left;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em; 
+}
+
+.association {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.maraude {
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.interet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    float: left;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em; 
+}
+
+.identification h1 {
+    font-size: 48px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: auto;
+    text-indent: 1em;
+
+}
+   
+#description {
+    font-weight: 100;
+    align-items: center;
+    gap: 4em;
+}
+
+.to-top {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A1A1A1;
+    border-radius: 50%;
+    text-decoration: none;
+    pointer-events: auto;
+    transition: all .4s;
+
+}
+
+  
+
+
+
